@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+   <div class="spacer"></div>
+   <main>
+      <form action="/api/predict/" method="post" enctype="multipart/form-data" class="predict__form">
+         {% csrf_token %}
+         <label for="predict__input" class="predict__label">Загрузите файл с расширением xlsx</label>
+         <input type="file" name="excel_file" id="predict__input">
+         <p class="predict__text">Прогнозное значение</p>
+         <p class="predict__result">{{result}}</p>
+         <button type="submit" class="predict__btn">Рассчитать</button>
+      </form> 
+   </main>
+</body>
+</html>
