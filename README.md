@@ -7,5 +7,6 @@
 
 Postman collection: https://api.postman.com/collections/32065544-abbc4526-0fc3-42f8-b957-7165ba254909?access_key=PMAT-01HJZTYX1KR3QB5E1BXVW0XWAT
 
-
-
+## Старт проекта
+Для запуска проекта необходимо в папке docker ввести следующую команду.
+docker-compose -f docker/docker-compose.dev.yml up -d 
