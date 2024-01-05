@@ -1,5 +1,5 @@
 from django.views.generic import TemplateView
-from modelpred.models import MainPage
+from .models import MainPage
 
 class MainPageView(TemplateView):
     template_name = 'pages/main.html'
