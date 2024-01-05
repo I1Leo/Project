@@ -31,3 +31,4 @@ class PredictView(GenericViewSet):
             return Response({'result': response})
       else:
             return render(request, 'pages/main.html', {'result': response})
+
