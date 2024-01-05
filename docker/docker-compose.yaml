@@ -5,7 +5,7 @@ services:
     build:
       context: .
       args:
-        - BRANCH_NAME=dev
+        - BRANCH_NAME=main
     command: bash -c "python manage.py collectstatic --noinput && python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     ports:
       - "8000:8000"
