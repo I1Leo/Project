@@ -5,7 +5,8 @@ ARG BRANCH_NAME
 WORKDIR /usr/src/app
 
 RUN git clone https://github.com/I1Leo/Project /usr/src/app
-RUN git checkout $BRANCH_NAME
+# RUN git checkout $BRANCH_NAME
+RUN git checkout dev
 
 WORKDIR /usr/src/app/src
 
